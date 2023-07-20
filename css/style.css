@@ -1,0 +1,154 @@
+body {
+    font-family: 'thin100', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*barra de navegacion*/
+.navBar{
+    background-color:#00425A;
+    color: #EFF5F5;
+    padding: 10px;
+}
+.navBar a {
+    color: #EFF5F5;
+    text-decoration: none ;
+    margin: 10px;
+    align-items: flex-start;
+}
+/*banner*/
+#banner{
+    position: relative;
+}
+#subtituloBanner{
+    position: absolute;
+    top: 400px;
+    font-size: 5rem;
+    color: #EFF5F5;
+    background-color: rgba(0,0,0, 0.6);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+/*secciones*/
+.section {
+    border: 1px solid #EFF5F5;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .section-header h2 {
+    margin: 0;
+  }
+
+  .section-content {
+    display: none;
+  }
+
+  .section.active .section-content {
+    display: block;
+  }
+
+  .section a {
+    display: block;
+    margin-top: 10px;
+  }
+
+a {
+    color: #FC7300;
+    text-decoration: none;
+}
+
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+
+h2 {
+    color: #00425A;
+    margin-bottom: 10px;
+}
+
+
+p {
+    margin: 0;
+}
+/*formulario*/
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #EFF5F5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00425A;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  .submit {
+    background-color: #FC7300;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .submit:hover {
+    background-color: #bd7f4c;
+  }
+  /*pie de pagina*/
+  
+  .footer {
+    background-color: #00425A;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer h2{
+    color: #EFF5F5;
+  }
+  .redes{
+    display: block;
+    padding-left: 20px;
+  }
+  .nombreEscuela{
+    flex-grow: 1;
+    text-align: center;
+  }
+  .contacto{
+    text-align: right;
+    padding-right: 20px;
+  }

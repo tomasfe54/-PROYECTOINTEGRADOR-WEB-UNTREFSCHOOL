@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=".//css/style.css">
+    <title>UntrefSchool - Escuela Primaria</title>
+</head>
+<body>
+   
+       
+          
+     <nav id="#navBar" class="navBar">
+        <ul></ul><a href="#quienes-somos">Quienes somos</a>
+        <a href="#por-que-elegirnos">¿Por qué elegirnos?</a>
+        <a href="#propuesta-educativa">Propuesta educativa</a>
+        <a href="#ultimas-noticias">Últimas noticias</a>
+    </nav>
+        <!--banner-->
+        <img id="banner" src="./img/banner1.jpg" width="100%">
+        <h2 id="subtituloBanner">UntrefSchool - Escuela Primaria</h2>
+       <!--secciones-->
+       <section id="quienes-somos" class="section">
+        <div class="section-header">
+          <h2>Quienes somos <i class="fas fa-chevron-down"></i></h2>
+        </div>
+        <div class="section-content">
+            <br>
+            <p>Somos una escuela primaria comprometida con la excelencia educativa y el desarrollo integral de nuestros estudiantes. Nuestro equipo docente altamente capacitado y apasionado trabaja con dedicación para brindar una educación de calidad, fomentando el amor por el aprendizaje y el crecimiento personal. Nuestra misión es formar ciudadanos responsables, creativos y comprometidos con su comunidad, preparándolos para los desafíos del siglo XXI.</p>
+            <a href="#por-que-elegirnos">Leer más</a>
+        </div>
+      </section>
+    
+      <section id="por-que-elegirnos" class="section">
+        <div class="section-header">
+          <h2>¿Por qué elegirnos <i class="fas fa-chevron-down"></i></h2>
+        </div>
+        <div class="section-content">
+            <br>
+          <p>En UntrefSchool, nos enorgullece ofrecer un entorno de aprendizaje enriquecedor y estimulante para nuestros alumnos. Contamos con instalaciones modernas y adaptadas a las necesidades educativas actuales, así como recursos tecnológicos de vanguardia que complementan nuestra metodología de enseñanza. Además, fomentamos la participación activa de las familias, estableciendo una relación de colaboración y apoyo mutuo. Nuestro enfoque pedagógico se basa en la personalización del aprendizaje, teniendo en cuenta las fortalezas y necesidades individuales de cada estudiante, garantizando así su éxito académico y emocional.</p>
+          <a href="#propuesta-educativa">Leer más</a>
+        </div>
+      </section>
+    
+      <section id="propuesta-educativa" class="section">
+        <div class="section-header">
+          <h2>Propuesta educativa <i class="fas fa-chevron-down"></i></h2>
+        </div>
+        <div class="section-content">
+            <br>
+          <p> nuestra propuesta educativa se basa en un enfoque integral que promueve el desarrollo de habilidades cognitivas, emocionales, sociales y creativas en nuestros estudiantes. Utilizamos metodologías activas y participativas, donde el alumno es protagonista de su propio proceso de aprendizaje, fomentando el pensamiento crítico, la resolución de problemas y la autonomía. Nuestro currículo se enriquece con actividades extracurriculares, talleres y proyectos interdisciplinarios que estimulan la creatividad y la exploración de nuevas áreas de conocimiento. Además, promovemos valores como el respeto, la tolerancia y la solidaridad, formando así ciudadanos comprometidos con la construcción de una sociedad más justa y equitativa.</p>
+          <a href="#ultimas-noticias">Leer más</a>
+        </div>
+      </section>
+    
+      <section id="ultimas-noticias" class="section">
+        <div class="section-header">
+          <h2>Últimas noticias <i class="fas fa-chevron-down"></i></h2>
+        </div>
+        <div class="section-content">
+            <br>
+          <p>Planeamos excursiones extracurriculares a la reserva natural.</p>
+          <img src="./img/excursion1.jpg" width="200px" >
+          <p>Una experiencia para que los chicos/as aprendan a cuidar y preservar la flora y fauna silvestre, y que hay un mundo salvaje alla afuera.</p> 
+          <img src="./img/excursion2.jpg" width="200px">
+          <a href="#quienes-somos">Volver al inicio</a>
+        </div>
+      </section>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+      <script>
+        const sections = document.querySelectorAll('.section');
+    
+        sections.forEach(section => {
+          const header = section.querySelector('.section-header');
+          header.addEventListener('click', () => {
+            section.classList.toggle('active');
+          });
+        });
+      </script>
+    <!--formulario-->
+    <div class="container">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
+    
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+    
+          <input type="submit" value="Enviar" class="submit">
+        </form>
+      </div>
+    
+    <!--pie de pagina-->
+    <footer class="footer">
+        <div class="redes">
+            <h2>Redes Sociales</h2>
+            <a href="https://ar.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://es-la.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+        <div class="nombreEscuela">
+<h2>UntrefSchool</h2>
+        </div>
+        <div class="contacto">
+<h2>Contactos</h2>
+<p>Email: info@untrefschool.com</p>
+<p>Telefono: +123456789</p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
